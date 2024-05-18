@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Giặt ủi",
+    "description": "Dịch vụ giặt ủi quần áo",
+    "price": 50000,
+    "unit": "kg"
+  },
+  {
+    "name": "Ăn sáng buffet",
+    "description": "Buffet sáng đa dạng",
+    "price": 150000,
+    "unit": "người"
+  },
+  {
+    "name": "Thuê xe",
+    "description": "Cho thuê xe máy, ô tô",
+    "price": 200000,
+    "unit": "ngày"
+  },
+  {
+    "name": "Spa",
+    "description": "Dịch vụ massage, chăm sóc da",
+    "price": 500000,
+    "unit": "lần"
+  },
+  {
+    "name": "Tour du lịch",
+    "description": "Tổ chức tour tham quan",
+    "price": 1000000,
+    "unit": "người"
+  }
+]

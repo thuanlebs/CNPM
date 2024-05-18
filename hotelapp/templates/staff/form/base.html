@@ -1,0 +1,101 @@
+{% extends 'layout/default/base.html' %} {% block title %} Rooms {% endblock %}
+{% block header %} {% endblock %} {% block footer %} {% endblock %} {% block
+content %} {% if 'cart' in session %} {%set check_in =
+session.get("cart").check_in %} {%set check_out = session.get("cart").check_out
+%} {%set items = session.get("cart")['items'] %}
+<div class="container" style="margin-top: 30px">
+  <div class="checkout-container">
+    <div class="row gy-xl-3">
+      <div class="col-8 col-xl-12">
+        <div class="cart-info">
+          <h1 class="cart-info__heading">
+            {% block formtitle %} {% endblock %} Information
+          </h1>
+
+          {% block form %}{% endblock %}
+
+          <div class="cart-info__separate"></div>
+
+          {%set currentRoom = rooms | selectattr("id", "equalto", items[0].room)
+          | first%}
+          <h2 class="cart-info__sub-heading">
+            Room<span class="room-name">({{currentRoom.name}})</span>'s guests
+          </h2>
+
+          <ul class="guest-list" data-room="{{items[0].room}}"></ul>
+
+          <div class="form__group">
+            <button
+              class="btn btn--small btn--primary js-more-guest"
+              style="width: 100%"
+            >
+              More guest
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 col-xl-12">
+        <div class="cart-info">
+          <div class="cart-info__row">
+            <a
+              style="
+                width: 100%;
+                text-align: right;
+                cursor: pointer;
+                padding: 4px 2px;
+              "
+              onclick="history.back()"
+            >
+              <span><i class="fa-solid fa-chevron-left"></i></span>
+              <span>Back</span>
+            </a>
+          </div>
+          <div class="cart-info__row">
+            <span>Check in</span>
+            <span>{{check_in}}</span>
+          </div>
+          <div class="cart-info__row">
+            <span>Check out </span>
+            <span>{{check_out}}</span>
+          </div>
+          <div class="cart-info__row">
+            <span
+              >Subtotal <span class="cart-info__sub-label">(Rooms)</span></span
+            >
+            <span class="total-rooms"></span>
+          </div>
+          <div class="cart-info__separate"></div>
+          <div class="cart-info__row">
+            <span>Estimated Total</span>
+            <span class="total-amount"></span>
+          </div>
+          <div class="cart-info__row">{% block submit %}{% endblock %}</div>
+        </div>
+        <div class="cart-info">
+          <h2 class="cart-info__sub-heading">Rooms</h2>
+          <div class="cart-info__list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %} {% endblock %} {% block javascript %}
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='js/checkout.js') }}"
+></script>
+
+<script>
+  $(".btn-reservate").addEventListener("click", () => {
+    fetch("/reservate", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then((res) => {
+      console.log(res);
+      window.location.href = "/";
+    });
+  });
+</script>
+{% endblock %}

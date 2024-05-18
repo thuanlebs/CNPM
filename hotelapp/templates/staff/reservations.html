@@ -1,0 +1,47 @@
+{% extends 'layout/staff/base.html' %} {% block title %} Home {% endblock %} {%
+block main %}
+
+<div class="products-area-wrapper tableView">
+  <div class="products-header">
+    <div class="product-cell image"></div>
+    <div class="product-cell">Rooms</div>
+    <div class="product-cell">Check in</div>
+    <div class="product-cell">Check out</div>
+    <div class="product-cell">Created at</div>
+    <div class="product-cell">Status</div>
+  </div>
+  {% for reservation in reservations %}
+  <div class="products-row">
+    <button class="cell-more-button">
+      <i class="bx bx-dots-vertical-rounded icon"></i>
+    </button>
+    <div class="product-cell image">
+      <a href="reservations/{{reservation.id}}">
+        <img
+          src="https://res.cloudinary.com/dzjhqjxqj/image/upload/v1703404014/samples/chair-and-coffee-table.jpg"
+          alt="product"
+      /></a>
+    </div>
+    <div class="product-cell">
+      <span class="cell-label">Rooms:</span>{% for room in reservation.rooms %}
+      {{room}} {% if room != reservation.rooms | last %} ,{% endif %} {% endfor
+      %}
+    </div>
+    <div class="product-cell">
+      <span class="cell-label">Check in:</span>{{reservation.check_in}}
+    </div>
+    <div class="product-cell">
+      <span class="cell-label">Check out:</span>{{reservation.check_out}}
+    </div>
+    <div class="product-cell">
+      <span class="cell-label">Created at:</span>{{reservation.created_at}}
+    </div>
+    <div class="product-cell status-cell">
+      <span class="cell-label">Status:</span>
+      <span class="status disabled">Due</span>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,254 @@
+[
+    {
+        "src": "deluxe01.jpg",
+        "room_type": 3
+    },
+    {
+        "src": "deluxe02.jpg",
+        "room_type": 3
+    },
+    {
+        "src": "deluxe03.jpg",
+        "room_type": 3
+    },
+    {
+        "src": "deluxe04.jpg",
+        "room_type": 3
+    },
+    {
+        "src": "deluxe05.jpg",
+        "room_type": 3
+    },
+    {
+        "src": "deluxe06.jpg",
+        "room_type": 1
+    },
+    {
+        "src": "deluxe07.jpg",
+        "room_type": 1
+    },
+    {
+        "src": "deluxe08.jpg",
+        "room_type": 1
+    },
+    {
+        "src": "deluxe09.jpg",
+        "room_type": 1
+    },
+    {
+        "src": "executive01.jpg",
+        "room_type": 4
+    },
+    {
+        "src": "executive02.jpg",
+        "room_type": 4
+    },
+    {
+        "src": "executive03.jpg",
+        "room_type": 4
+    },
+    {
+        "src": "executive04.jpg",
+        "room_type": 4
+    },
+    {
+        "src": "executive05.jpg",
+        "room_type": 4
+    },
+    {
+        "src": "executive06.jpg",
+        "room_type": 4
+    },
+    {
+        "src": "executive07.jpg",
+        "room_type": 4
+    },
+    {
+        "src": "executive08.jpg",
+        "room_type": 4
+    },
+    {
+        "src": "executive09.jpg",
+        "room_type": 4
+    },
+    {
+        "src": "junior01.jpg",
+        "room_type": 7
+    },
+    {
+        "src": "junior02.jpg",
+        "room_type": 7
+    },
+    {
+        "src": "junior03.jpg",
+        "room_type": 7
+    },
+    {
+        "src": "junior04.jpg",
+        "room_type": 7
+    },
+    {
+        "src": "junior05.jpg",
+        "room_type": 7
+    },
+    {
+        "src": "junior06.jpg",
+        "room_type": 7
+    },
+    {
+        "src": "junior07.jpg",
+        "room_type": 7
+    },
+    {
+        "src": "standard01.jpg",
+        "room_type": 1
+    },
+    {
+        "src": "standard02.jpg",
+        "room_type": 1
+    },
+    {
+        "src": "standard03.jpg",
+        "room_type": 1
+    },
+    {
+        "src": "standard04.jpg",
+        "room_type": 1
+    },
+    {
+        "src": "standard05.jpg",
+        "room_type": 2
+    },
+    {
+        "src": "standard06.jpg",
+        "room_type": 2
+    },
+    {
+        "src": "standard07.jpg",
+        "room_type": 2
+    },
+    {
+        "src": "standard08.jpg",
+        "room_type": 2
+    },
+    {
+        "src": "standard09.jpg",
+        "room_type": 8
+    },
+    {
+        "src": "standard10.jpg",
+        "room_type": 8
+    },
+    {
+        "src": "standard11.jpg",
+        "room_type": 8
+    },
+    {
+        "src": "standard12.jpg",
+        "room_type": 8
+    },
+    {
+        "src": "standard13.jpg",
+        "room_type": 8
+    },
+    {
+        "src": "suite01.jpg",
+        "room_type": 3
+    },
+    {
+        "src": "suite02.jpg",
+        "room_type": 3
+    },
+    {
+        "src": "suite03.jpg",
+        "room_type": 3
+    },
+    {
+        "src": "suite04.jpg",
+        "room_type": 3
+    },
+    {
+        "src": "suite05.jpg",
+        "room_type": 3
+    },
+    {
+        "src": "suite06.jpg",
+        "room_type": 6
+    },
+    {
+        "src": "suite07.jpg",
+        "room_type": 6
+    },
+    {
+        "src": "suite08.jpg",
+        "room_type": 6
+    },
+    {
+        "src": "suite09.jpg",
+        "room_type": 6
+    },
+    {
+        "src": "suite10.jpg",
+        "room_type": 7
+    },
+    {
+        "src": "suite11.jpg",
+        "room_type": 7
+    },
+    {
+        "src": "suite12.jpg",
+        "room_type": 7
+    },
+    {
+        "src": "suite13.jpg",
+        "room_type": 10
+    },
+    {
+        "src": "suite14.jpg",
+        "room_type": 10
+    },
+    {
+        "src": "suite19.jpg",
+        "room_type": 7
+    },
+    {
+        "src": "superior01.jpg",
+        "room_type": 5
+    },
+    {
+        "src": "superior02.jpg",
+        "room_type": 5
+    },
+    {
+        "src": "superior03.jpg",
+        "room_type": 5
+    },
+    {
+        "src": "superior04.jpg",
+        "room_type": 5
+    },
+    {
+        "src": "superior05.jpg",
+        "room_type": 9
+    },
+    {
+        "src": "superior06.jpg",
+        "room_type": 9
+    },
+    {
+        "src": "superior07.jpg",
+        "room_type": 9
+    },
+    {
+        "src": "superior08.jpg",
+        "room_type": 9
+    },
+    {
+        "src": "superior09.jpg",
+        "room_type": 9
+    },
+    {
+        "src": "superior10.jpg",
+        "room_type": 9
+    }
+]

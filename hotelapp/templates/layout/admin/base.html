@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/d4881d7d22.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="row row-cols-lg-1">
+      <aside class="left-sidebar col-2 d-lg-none">
+        {% block sidebar %} {% include 'layout/admin/sidebar.html' %} {% endblock
+        %}
+      </aside>
+      <div class="main col-10">
+        {% block header %} {% include 'layout/admin/header.html' %} {% endblock
+        %}
+
+        <div>{% block content required %}{% endblock %}</div>
+
+        {% block footer %} {% include 'layout/admin/footer.html' %} {% endblock
+        %}
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+[
+    {
+        "check_in": "2024-05-17",
+        "check_out": "2024-05-19",
+        "created_at": "2024-05-17",
+        "receptionist": 2,
+        "booking": 1
+    },
+    {
+        "check_in": "2024-05-10",
+        "check_out": "2024-05-15",
+        "created_at": "2024-05-10",
+        "receptionist": 2,
+        "booking": 2
+    },
+    {
+        "check_in": "2024-05-20",
+        "check_out": "2024-05-25",
+        "created_at": "2024-05-20",
+        "receptionist": 2,
+        "booking": 3
+    },
+    {
+        "check_in": "2024-06-01",
+        "check_out": "2024-06-05",
+        "created_at": "2024-06-01",
+        "receptionist": 2,
+        "booking": 4
+    },
+    {
+        "check_in": "2024-06-10",
+        "check_out": "2024-06-15",
+        "created_at": "2024-06-10",
+        "receptionist": 2,
+        "booking": 5
+    },
+    {
+        "check_in": "2024-06-20",
+        "check_out": "2024-06-25",
+        "created_at": "2024-06-20",
+        "receptionist": 2,
+        "booking": 6
+    },
+    {
+        "check_in": "2024-07-01",
+        "check_out": "2024-07-07",
+        "created_at": "2024-07-01",
+        "receptionist": 2,
+        "booking": 7
+    },
+    {
+        "check_in": "2024-07-10",
+        "check_out": "2024-07-15",
+        "created_at": "2024-07-10",
+        "receptionist": 2,
+        "booking":  8
+    },
+    {
+        "check_in": "2024-07-20",
+        "check_out": "2024-07-25",
+        "created_at": "2024-07-20",
+        "receptionist": 2,
+        "booking": 9
+    },
+    {
+        "check_in": "2024-08-01",
+        "check_out": "2024-08-05",
+        "created_at": "2024-08-01",
+        "receptionist": 2,
+        "booking": 10
+    }
+]

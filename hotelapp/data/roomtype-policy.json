@@ -1,0 +1,82 @@
+[
+    {
+        "room_type": 1,
+        "policy_id": 1
+    },
+    {
+        "room_type": 5,
+        "policy_id": 1
+    },
+    {
+        "room_type": 9,
+        "policy_id": 1
+    },
+    {
+        "room_type": 3,
+        "policy_id": 1
+    },
+    {
+        "room_type": 7,
+        "policy_id": 1
+    },
+    {
+        "room_type": 2,
+        "policy_id": 1
+    },
+    {
+        "room_type": 8,
+        "policy_id": 1
+    },
+    {
+        "room_type": 6,
+        "policy_id": 1
+    },
+    {
+        "room_type": 4,
+        "policy_id": 1
+    },
+    {
+        "room_type": 10,
+        "policy_id": 1
+    },
+    {
+        "room_type": 1,
+        "policy_id": 2
+    },
+    {
+        "room_type": 5,
+        "policy_id": 2
+    },
+    {
+        "room_type": 9,
+        "policy_id": 2
+    },
+    {
+        "room_type": 3,
+        "policy_id": 2
+    },
+    {
+        "room_type": 7,
+        "policy_id": 2
+    },
+    {
+        "room_type": 2,
+        "policy_id": 2
+    },
+    {
+        "room_type": 8,
+        "policy_id": 2
+    },
+    {
+        "room_type": 6,
+        "policy_id": 2
+    },
+    {
+        "room_type": 4,
+        "policy_id": 2
+    },
+    {
+        "room_type": 10,
+        "policy_id": 2
+    }
+]

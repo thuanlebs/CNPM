@@ -1,0 +1,349 @@
+{% extends 'layout/default/base.html' %} {% block title %} Rooms {% endblock %}
+{% block header %} {% endblock %} {% block content %}
+<div class="container" style="margin-top: 30px">
+  <div class="checkout-container">
+    <div class="row gy-xl-3">
+      <div class="col-8 col-xl-12">
+        <div class="cart-info">
+          <div class="cart-info__row">
+            <h1 class="cart-info__heading">
+              {{title}} information ({{booking.invoice.status}})
+            </h1>
+            {% if title == "Booking" %}
+            <a
+              class="cart-info__next-btn btn btn--rounded add-reservation"
+              href="/staff/booking?check-in={{booking.check_in}}&check-out={{booking.check_out}}&booking-id={{booking.id}}"
+            >
+              Add reservation
+            </a>
+            {% endif %}
+          </div>
+          <div class="cart-info__separate"></div>
+
+          {% if title == "Booking" %}
+          <form class="form" method="post" action="/book" id="booker">
+            <div class="booker">
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="name" class="form__label form__label--small"
+                    >Name</label
+                  >
+                  <div class="form__text-input form__text-input--small">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Name"
+                      class="form__input"
+                      required
+                      minlength="2"
+                      value="{{booking.name}}"
+                      readonly
+                    />
+                  </div>
+                  <p class="form__error">Name must be at least 2 characters</p>
+                </div>
+                <div class="form__group">
+                  <label for="phone" class="form__label form__label--small"
+                    >Phone</label
+                  >
+                  <div class="form__text-input form__text-input--small">
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      placeholder="Phone"
+                      class="form__input"
+                      required
+                      minlength="10"
+                      maxlength="11"
+                      value="+84{{booking.phone}}"
+                      readonly
+                    />
+                  </div>
+                  <p class="form__error">
+                    Phone must be at least 10 characters
+                  </p>
+                </div>
+              </div>
+              <div class="form__group">
+                <label for="email" class="form__label form__label--small"
+                  >Email</label
+                >
+                <div class="form__text-input form__text-input--small">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                    class="form__input"
+                    required
+                    minlength="2"
+                    value="{{booking.email}}"
+                    readonly
+                  />
+                </div>
+                <p class="form__error">Example: thinh@gmail.com</p>
+              </div>
+              <div class="form__group">
+                <label for="notes" class="form__label form__label--small"
+                  >Notes</label
+                >
+                <div class="form__text-area">
+                  <textarea
+                    name="notes"
+                    id="notes"
+                    placeholder="Note your requirements"
+                    class="form__text-area-input"
+                    value="{{booking.notes}}"
+                    readonly
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="cart-info__separate"></div>
+          {% endif %}
+
+          <h2 class="cart-info__sub-heading">Guests</h2>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name" class="form__label form__label--small"
+                >Name</label
+              >
+            </div>
+            <div class="form__group">
+              <label for="name" class="form__label form__label--small"
+                >Identity</label
+              >
+            </div>
+            <div class="form__group">
+              <label for="name" class="form__label form__label--small"
+                >Room</label
+              >
+            </div>
+            <div class="form__group" style="flex: 0.4">
+              <label for="name" class="form__label form__label--small"></label>
+            </div>
+          </div>
+          <ul class="guest-list" data-room="">
+            {% for guest_data in booking.get_guests() %} {% set guest =
+            guest_data.get_guest() %}
+            <li class="guest-item" data-id="{{guest.identity}}">
+              <div class="form__row">
+                <div class="form__group">
+                  <div class="form__text-input form__text-input--small">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="form__input guest-name"
+                      value="{{guest.name}}"
+                      readonly
+                    />
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <div class="form__text-input form__text-input--small">
+                    <input
+                      type="text"
+                      placeholder="Identity number"
+                      class="form__input guest-id"
+                      pattern="[0-9]{12}"
+                      maxlength="12"
+                      required
+                      value="{{guest.identity_num}}"
+                      readonly
+                    />
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <div class="form__text-input form__text-input--small">
+                    <input
+                      type="text"
+                      placeholder="Identity number"
+                      class="form__input guest-id"
+                      value="Room: {{guest_data.get_room()}}"
+                      readonly
+                    />
+                  </div>
+                </div>
+
+                <div class="form__group form__group--inline" style="flex: 0.4">
+                  <label class="form__checkbox">
+                    <input
+                      type="checkbox"
+                      class="form__checkbox-input d-none guest-vietnamese"
+                      {%
+                      if
+                      guest.is_vietnamese
+                      %}
+                      checked
+                      {%
+                      endif
+                      %}
+                      disabled
+                    />
+                    <span class="form__checkbox-label">Vietnamese</span>
+                  </label>
+                </div>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="col-4 col-xl-12">
+        <div class="cart-info">
+          <div class="cart-info__row">
+            <a
+              style="
+                width: 100%;
+                text-align: right;
+                cursor: pointer;
+                padding: 4px 2px;
+              "
+              onclick="history.back()"
+            >
+              <span><i class="fa-solid fa-chevron-left"></i></span>
+              <span>Back</span>
+            </a>
+          </div>
+          <div class="cart-info__row">
+            <span>Check in</span>
+            <span>{{booking.check_in}}</span>
+          </div>
+          <div class="cart-info__row">
+            <span>Check out </span>
+            <span>{{booking.check_out}}</span>
+          </div>
+          <div class="cart-info__row">
+            <span
+              >Subtotal <span class="cart-info__sub-label">(Rooms)</span></span
+            >
+            <span class="total-rooms">{{booking.rooms | length}}</span>
+          </div>
+          <div class="cart-info__separate"></div>
+          <div class="cart-info__row">
+            <span>Total</span>
+            <span class="total-amount">${{booking.get_total()}}</span>
+          </div>
+          <div class="cart-info__row">
+            <button
+              class="cart-info__next-btn btn btn--rounded btn--primary btn-print"
+              style="width: 100%"
+            >
+              Print invoice
+            </button>
+            <button
+              class="cart-info__next-btn btn btn--outline btn-pay js-toggle"
+              style="width: 100%"
+              toggle-target="#payment-confirm"
+            >
+              Pay
+            </button>
+          </div>
+        </div>
+        <div class="cart-info">
+          <h2 class="cart-info__sub-heading">Rooms</h2>
+          <div class="cart-info__listt">
+            {% for room in booking.rooms %}
+            <article class="cart-item" data-room="">
+              <div class="cart-item__img">
+                <img
+                  src="/static/img/{{room.get_image().src}}"
+                  class="cart-item__thumb"
+                  alt=""
+                  style="height: 120px; width: 80px"
+                />
+              </div>
+              <div class="cart-item__info">
+                <div class="cart-item__info-left">
+                  <h3 class="cart-item__title">{{room.get_room_type()}}</h3>
+                  <p class="cart-item__price-wrap">Room: {{room.name}}</p>
+                  {% for expense in room.get_expense(booking.id) %}
+                  <p class="cart-item__price-wrap">
+                    ${{expense.expense}} |
+                    <span class="cart-item__status">{{expense.name}}</span>
+                  </p>
+                  {% endfor %}
+                </div>
+                <div class="cart-item__info-right">
+                  <p class="cart-item__total-price">${{room.get_price()}}</p>
+                </div>
+              </div>
+            </article>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: confirm payment -->
+<div id="payment-confirm" class="modal modal--small hide">
+  <div class="modal__content">
+    <p class="modal__text">Are you sure to do this payment?</p>
+    <div class="modal__bottom">
+      <button
+        class="btn btn--small btn--danger modal__btn js-toggle cancel"
+        toggle-target="#payment-confirm"
+      >
+        Cancel
+      </button>
+      <button
+        class="btn btn--small btn--outline modal__btn btn--no-margin confirm"
+        onclick="pay()"
+      >
+        Sure
+      </button>
+    </div>
+  </div>
+  <div class="modal__overlay js-toggle" toggle-target="#payment-confirm"></div>
+</div>
+
+{% endblock %} {% block javascript %}
+<!-- Script to print the content of a div -->
+<script>
+  const pay = () => {
+    fetch("/api/invoice/set-status", {
+      method: "patch",
+      body: JSON.stringify({
+        invoice_id: "{{booking.id}}",
+        invoice_type: "{{title}}",
+        invoice_status: "PAID",
+      }),
+
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then((res) => {
+      console.log(res);
+    });
+    $(".cancel").click();
+  };
+
+  $(".btn-print").addEventListener("click", (e) => {
+    fetch("/api/invoice/set-status", {
+      method: "patch",
+      body: JSON.stringify({
+        invoice_id: "{{booking.id}}",
+        invoice_type: "{{title}}",
+        invoice_status: "UNPAID",
+      }),
+
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then((res) => {
+      console.log(res);
+    });
+    e.preventDefault();
+    window.print();
+  });
+</script>
+
+{% endblock %} {% block footer%} {% endblock %}

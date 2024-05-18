@@ -1,0 +1,84 @@
+{% extends 'staff/form/base.html' %} {% block formtitle %} Booking {% endblock
+%} {% block form %}
+<div class="cart-info__separate"></div>
+
+<form
+  class="form"
+  method="post"
+  action="/book"
+  id="booker"
+  onsubmit="onFormSubmit()"
+>
+  <div class="booker">
+    <div class="form__row">
+      <div class="form__group">
+        <label for="name" class="form__label form__label--small">Name</label>
+        <div class="form__text-input form__text-input--small">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            class="form__input"
+            required
+            minlength="2"
+          />
+        </div>
+        <p class="form__error">Name must be at least 2 characters</p>
+      </div>
+      <div class="form__group">
+        <label for="phone" class="form__label form__label--small">Phone</label>
+        <div class="form__text-input form__text-input--small">
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone"
+            class="form__input"
+            required
+            minlength="10"
+            maxlength="11"
+          />
+        </div>
+        <p class="form__error">Phone must be at least 10 characters</p>
+      </div>
+    </div>
+    <div class="form__group">
+      <label for="email" class="form__label form__label--small">Email</label>
+      <div class="form__text-input form__text-input--small">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          class="form__input"
+          required
+          minlength="2"
+        />
+      </div>
+      <p class="form__error">Example: thinh@gmail.com</p>
+    </div>
+    <div class="form__group">
+      <label for="notes" class="form__label form__label--small">Notes</label>
+      <div class="form__text-area">
+        <textarea
+          name="notes"
+          id="notes"
+          placeholder="Note your requirements"
+          class="form__text-area-input"
+        ></textarea>
+      </div>
+    </div>
+  </div>
+</form>
+
+{% endblock %} {% block submit %}
+<button
+  class="cart-info__next-btn btn btn--primary btn--rounded btn-book hide"
+  style="width: 100%"
+  type="submit"
+  form="booker"
+>
+  Create
+</button>
+{% endblock %}

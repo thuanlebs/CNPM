@@ -1,0 +1,111 @@
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <div class="top-bar">
+      <!-- More -->
+      <label class="top-bar__more d-lg-block" for="navbar-mobile-input">
+        <i class="fa-solid fa-bars-staggered top-bar__more-icon"></i>
+      </label>
+
+      <!-- Logo -->
+      <a href="/" class="logo">
+        <img
+          src="{{ url_for('static', filename='icons/logo.svg') }}"
+          class="logo__img"
+        />
+      </a>
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="navbar__list d-lg-none">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">About us</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Services</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Navbar Mobile  -->
+      <input
+        hidden
+        type="checkbox"
+        name=""
+        id="navbar-mobile-input"
+        class="navbar__mobile-input"
+      />
+      <label class="navbar__overlay" for="navbar-mobile-input"></label>
+      <nav class="navbar__mobile">
+        <label for="navbar-mobile-input">
+          <i class="fa-solid fa-arrow-left navbar__mobile-arrow"></i>
+        </label>
+        <ul class="navbar__mobile-list">
+          <li class="navbar__mobile-item">
+            <button href="#" class="navbar__mobile-link" text>About us</button>
+          </li>
+          <li class="navbar__mobile-item">
+            <button href="#" class="navbar__mobile-link" text>
+              Accommodation
+            </button>
+          </li>
+          <li class="navbar__mobile-item">
+            <button href="#" class="navbar__mobile-link" text>Services</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="top-actions">
+        {% if not current_user.is_authenticated %}
+        <a href="/login" class="btn btn--primary">Sign In</a>
+
+        {% else %}
+        <div class="top-act__user">
+          <img
+            src="https://res.cloudinary.com/dzjhqjxqj/image/upload/v1704532184/default-avatar-icon-of-social-media-user-vector_yefjz5.jpg"
+            alt=""
+            class="top-act__avatar"
+          />
+
+          <!-- Dropdown -->
+          <div class="act-dropdown top-act__dropdown">
+            <div class="act-dropdown__inner user-menu">
+              <div class="user-menu__top">
+                {%set src =
+                "https://res.cloudinary.com/dzjhqjxqj/image/upload/v1704532184/default-avatar-icon-of-social-media-user-vector_yefjz5.jpg"
+                %} {% if current_user.avatar %} {%set src = current_user.avatar
+                %} {% endif %}
+                <img src="{{src}}" alt="" class="user-menu__avatar" />
+                <div>
+                  <p class="user-menu__name">
+                    {{current_user.first_name}} {{current_user.name}}
+                  </p>
+                  <p>{{current_user.email}}</p>
+                </div>
+              </div>
+
+              <ul class="user-menu__list">
+                {% if current_user.role | string != "UserRole.CUSTOMER" %}
+                <li>
+                  <a href="/staff" class="user-menu__link">Staff</a>
+                </li>
+                {% endif %}
+                <li>
+                  <a href="/profile" class="user-menu__link">Profile</a>
+                </li>
+                <li>
+                  <a href="#!" class="user-menu__link">Settings</a>
+                </li>
+                <li class="user-menu__separate">
+                  <a href="/logout" class="user-menu__link">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,174 @@
+{% extends 'layout/default/base.html' %} {% block title %} {{current_user.name}}
+{% endblock %} {% block content %}
+
+<main class="profile">
+  <div class="container">
+    <div class="profile-container">
+      <div class="row gy-md-3">
+        <div class="col-9 col-xl-8 col-lg-7 col-md-12">
+          <div class="cart-info">
+            <div class="row gy-3">
+              <div class="col-12">
+                <h2 class="cart-info__heading">Booked</h2>
+                <p class="cart-info__desc profile__desc"></p>
+                <div class="row gy-md-2 row-cols-3 row-cols-xl-2 row-cols-lg-1">
+                  {% for booking in bookings %}
+                  <div class="col">
+                    <article class="payment-card">
+                      <image
+                        src="https://res.cloudinary.com/dzjhqjxqj/image/upload/v1703844016/v2depwkhte1trcs0z9q9.jpg"
+                        alt=""
+                        class="payment-card__img"
+                      />
+                      <div class="payment-card__number">
+                        {% for room in booking.rooms %} {{room.get_room_type()}}
+                        {% endfor %}
+                      </div>
+                      <div class="payment-card__bottom">
+                        <div>
+                          <p class="payment-card__label">Check in</p>
+                          <p class="payment-card__value">
+                            {{booking.check_in}}
+                          </p>
+                        </div>
+                        <div class="payment-card__expired">
+                          <p class="payment-card__label">Check out</p>
+                          <p class="payment-card__value">
+                            {{booking.check_out}}
+                          </p>
+                        </div>
+                        <div class="payment-card__circle"></div>
+                      </div>
+                    </article>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+
+              <div class="col-12">
+                <h2 class="cart-info__heading">Account info</h2>
+                <p class="cart-info__desc profile__desc">
+                  Addresses, contact information and password
+                </p>
+                <div class="row gy-md-2 row-cols-2 row-cols-lg-1">
+                  <div class="col">
+                    <a href="./edit-personal-info.html">
+                      <article class="account-info">
+                        <div class="account-info__icon">
+                          <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div>
+                          <h3 class="account-info__title">Email Address</h3>
+                          <p class="account-info__desc">
+                            {{current_user.email}}
+                          </p>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+
+                  <div class="col">
+                    <a href="./edit-personal-info.html">
+                      <article class="account-info">
+                        <div class="account-info__icon">
+                          <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                          <h3 class="account-info__title">Phone number</h3>
+                          <p class="account-info__desc">
+                            +84{{current_user.phone}}
+                          </p>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+
+                  <div class="col">
+                    <a href="./edit-personal-info.html">
+                      <article class="account-info">
+                        <div class="account-info__icon">
+                          <i class="fa-regular fa-map"></i>
+                        </div>
+                        <div>
+                          <h3 class="account-info__title">Address</h3>
+                          <p class="account-info__desc">
+                            {{current_user.address}}
+                          </p>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3col-xl-4col-lg-5col-md-12">
+          <aside class="profile__sidebar">
+            <div class="profile-user">
+              {%set src =
+              "https://res.cloudinary.com/dzjhqjxqj/image/upload/v1704532184/default-avatar-icon-of-social-media-user-vector_yefjz5.jpg"
+              %} {% if current_user.avatar %} {%set src = current_user.avatar %}
+              {% endif %}
+              <img src="{{src}}" alt="" class="profile-user__avatar" />
+              <h1 class="profile-user__name">{{current_user.name}}</h1>
+              <p class="profile-user__desc">{{current_user.status}}</p>
+            </div>
+
+            <div class="profile-menu">
+              <h3 class="profile-menu__title">Manage Account</h3>
+              <ul class="profile-menu__list">
+                <li>
+                  <a
+                    href="./edit-personal-info.html"
+                    class="profile-menu__link"
+                  >
+                    <span class="profile-menu__icon">
+                      <i class="fa-regular fa-user"></i>
+                    </span>
+                    Personal info
+                  </a>
+                </li>
+                <li>
+                  <a href="#!" class="profile-menu__link">
+                    <span class="profile-menu__icon">
+                      <i class="fa-regular fa-envelope"></i>
+                    </span>
+                    Communications & privacy
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="profile-menu">
+              <h3 class="profile-menu__title">Service</h3>
+              <ul class="profile-menu__list">
+                <li>
+                  <a href="#!" class="profile-menu__link">
+                    <span class="profile-menu__icon">
+                      <i class="fa-solid fa-question"></i>
+                    </span>
+                    Help
+                  </a>
+                </li>
+                <li>
+                  <a href="#!" class="profile-menu__link">
+                    <span class="profile-menu__icon">
+                      <i class="fa-solid fa-exclamation"></i>
+                    </span>
+                    Terms of Use
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %} {% block javascript %}
+
+<!-- The contents of myscript.js will be loaded inside the script tag -->
+{% endblock %}

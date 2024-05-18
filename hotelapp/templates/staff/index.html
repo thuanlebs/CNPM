@@ -1,0 +1,46 @@
+{% extends 'layout/staff/base.html' %} {% block title %} Home {% endblock %} {%
+block main %}
+
+<div class="products-area-wrapper tableView">
+  <div class="products-header">
+    <div class="product-cell image"></div>
+    <div class="product-cell">Customer</div>
+    <div class="product-cell">Phone</div>
+    <div class="product-cell">Check in</div>
+    <div class="product-cell">Check out</div>
+    <div class="product-cell">Status</div>
+  </div>
+  {% for booking in bookings %}
+  <div class="products-row">
+    <button class="cell-more-button">
+      <i class="bx bx-dots-vertical-rounded icon"></i>
+    </button>
+    <div class="product-cell image">
+      <a href="bookings/{{booking.id}}">
+        <img
+          src="https://res.cloudinary.com/dzjhqjxqj/image/upload/v1703404014/samples/chair-and-coffee-table.jpg"
+          alt="product"
+      /></a>
+    </div>
+    <div class="product-cell">
+      <span class="cell-label">Customer:</span>{{booking.name}}
+    </div>
+    <div class="product-cell">
+      <span class="cell-label">Phone:</span>+{{booking.phone}}
+    </div>
+
+    <div class="product-cell">
+      <span class="cell-label">Created in:</span>{{booking.check_in}}
+    </div>
+    <div class="product-cell">
+      <span class="cell-label">Created outt:</span>{{booking.check_out}}
+    </div>
+    <div class="product-cell status-cell">
+      <span class="cell-label">Status:</span>
+      <span class="status disabled">Due</span>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

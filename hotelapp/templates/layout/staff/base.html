@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/staff.js') }}"
+    ></script>
+  </head>
+  <body>
+    <div class="app-container">
+      {% block sidebar %} {% include 'layout/staff/sidebar.html' %} {% endblock
+      %}
+      <div class="app-content">
+        {% block header %} {% include "layout/staff/header.html" %} {% endblock
+        %} {% block actions %} {% include "layout/staff/actions.html"%} {%
+        endblock %} {% block main required %}{% endblock %}
+      </div>
+    </div>
+
+    <!-- Modal -->
+    {% block modal %}{% endblock %}
+  </body>
+</html>
+
+{%block javascript %}
+<script>
+  $$(".sidebar-list-item").forEach((item) => {
+    if (item.dataset.title === "{{title | safe}}") {
+      item.classList.add("active");
+    }
+  });
+</script>
+{% endblock %}

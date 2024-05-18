@@ -1,0 +1,80 @@
+{% extends 'layout/default/base.html' %} {% block title %} Home {% endblock %}
+{% block content %}
+
+<div class="slideshow">
+  <div class="slideshow__container">
+    <div class="slideshow__inner">
+      <div
+        class="slideshow__item"
+        style="background-image: url(../static/img/slide01.jpg)"
+      ></div>
+      <div
+        class="slideshow__item"
+        style="background-image: url(../static/img/slide02.jpg)"
+      ></div>
+      <div
+        class="slideshow__item"
+        style="background-image: url(../static/img/slide03.jpg)"
+      ></div>
+      <div
+        class="slideshow__item"
+        style="background-image: url(../static/img/slide04.jpg)"
+      ></div>
+      <div
+        class="slideshow__item"
+        style="background-image: url(../static/img/slide05.jpg)"
+      ></div>
+      <div
+        class="slideshow__item"
+        style="background-image: url(../static/img/slide06.jpg)"
+      ></div>
+    </div>
+
+    <div class="slideshow__content">
+      <div class="caption">Welcome</div>
+      <div class="name">fatthinh hotel</div>
+      <a href="/booking" class="btn btn--outline">See more</a>
+    </div>
+
+    <div class="slideshow__page">
+      <button class="prev">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <button class="next">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="content__container container">
+  <div class="introduction row row-cols-2 row-cols-lg-1">
+    <div class="left">
+      <h1>Welcome to fatthinh hotel</h1>
+      <p>
+        fatthinh is located at 133 Phan Chu Trinh, Ward 2, just 3 minutes walk
+        from Back Beach and more than 1km from Front Beach.
+      </p>
+      <p>
+        The hotel has 64 rooms including double rooms and family rooms with
+        elegant and modern design. There is also a restaurant on the 7th floor,
+        a cake cafe on the ground floor and a spacious car park that can
+        accommodate 30 cars.
+      </p>
+      <p>
+        Professional, friendly and extremely hospitable staff. Committed to
+        providing the best customer experience.
+      </p>
+      <p><em>Come stay with us to feel best&nbsp;hospitality.</em></p>
+    </div>
+    <div class="right"></div>
+  </div>
+</div>
+
+{% endblock %} {% block javascript %}
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='js/home.js') }}"
+></script>
+<!-- The contents of myscript.js will be loaded inside the script tag -->
+{% endblock %}

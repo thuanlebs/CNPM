@@ -1,0 +1,283 @@
+.alert {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translate(-50%, -150%);
+  z-index: 999;
+  padding: 14px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  border-radius: 12px;
+}
+
+.alert.success {
+  background-color: #04aa6d;
+}
+
+.alert.hide {
+  animation: hide-alert 1.2s;
+}
+
+.alert.show {
+  animation: show-alert 1.2s;
+}
+
+@keyframes show-alert {
+  from {
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hide-alert {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+}
+
+.check-available {
+  position: sticky !important;
+  top: 120px;
+  height: 560px;
+  box-shadow: 1px 4px 12px 6px rgba(202, 202, 202, 0.27);
+}
+
+.room {
+  &-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 8px 0;
+    border-radius: 8px;
+  }
+
+  &-item:hover {
+    box-shadow: 2px 4px 24px 1px rgb(183 175 175 / 67%);
+  }
+
+  &-items.hide {
+    display: none;
+  }
+
+  &-items.show {
+    display: block;
+  }
+
+  &-thumbnail img {
+    width: 360px;
+    height: 260px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  &-content {
+    padding: 20px;
+    max-width: 400px;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 18px;
+    }
+
+    h4 {
+      color: #ffb700;
+      margin-bottom: 16px;
+
+      span {
+        color: #afb4bf;
+        font-size: 14px;
+      }
+    }
+
+    .btn {
+      font-size: 16px;
+      font-weight: 500;
+      width: 100%;
+    }
+  }
+
+  &-actions {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      scale: 0.99;
+    }
+  }
+
+  &-feature {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+    margin-top: 32px;
+
+    h6 {
+      -webkit-box-flex: 0;
+      flex: 0 0 50%;
+      max-width: 50%;
+      width: 50%;
+      font-weight: 400;
+      color: #afb4bf;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.fixed-cart {
+  position: fixed;
+  bottom: 16%;
+  right: 20px;
+
+  & .cart-icon {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    border-radius: 999px;
+    background: #3b5998;
+  }
+
+  & .cart-icon:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  padding: 4px 6px;
+  border-radius: 9999px;
+  font-size: 12px;
+  background: #ff0000;
+  color: #fff;
+}
+
+.room-detail {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 820px;
+}
+
+.room-detail.hide {
+  display: none;
+  transform: translateX(-200%);
+}
+
+.room-detail.show {
+  display: flex;
+  transform: translateX(0);
+  animation: show 1.2s;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.room-detail__heading {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.room-detail__title,
+.room-detail__back {
+  font-size: 26px;
+  font-weight: 500;
+  padding: 12px 8px;
+}
+
+.room-detail__back {
+  position: absolute;
+  left: 0;
+}
+
+.room-detail img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.room-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 0;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.room-info:last-child {
+  border-bottom: none;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+  flex: 0 0 25%;
+}
+
+.description {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #555;
+  flex: 1;
+}
+
+.description ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.description ul li {
+  margin-bottom: 8px;
+}
+
+.description ul li strong {
+  font-weight: 500;
+}
+
+.list-inline-item {
+  display: inline-block;
+  margin-right: 15px;
+}

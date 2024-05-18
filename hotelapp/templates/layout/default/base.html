@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/d4881d7d22.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/script.js') }}"
+    ></script>
+  </head>
+  <body>
+    {% block header %} {% include 'layout/default/header.html' %} {% endblock %}
+
+    <main class="content">{% block content required %}{% endblock %}</main>
+
+    {% block footer %} {% include 'layout/default/footer.html' %} {% endblock %}
+    {% block javascript %}
+    <!-- The contents of .js will be loaded inside the script tag -->
+    {% endblock %}
+
+    <a href="/booking" class="btn btn--primary book-now">BOOK NOW</a>
+    <script>
+      const bookNowBtn = $(".book-now");
+      if (document.title === "Rooms") bookNowBtn.classList.add("hide");
+    </script>
+
+    <!-- Modal: loader -->
+    <div id="loader" class="modal hide">
+      <div
+        class="modal__content"
+        style="background: transparent; width: unset; padding: 0"
+      >
+        <div class="loader"></div>
+        <button class="js-toggle" toggle-target="#loader"></button>
+      </div>
+      <div class="modal__overlay"></div>
+    </div>
+  </body>
+</html>

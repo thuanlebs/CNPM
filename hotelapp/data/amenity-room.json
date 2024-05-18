@@ -1,0 +1,1092 @@
+[
+  {
+    "room": 1,
+    "amenity": 1,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 2,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 3,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 4,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 5,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 6,
+    "quantity": 1
+  },
+  {
+    "amenity": 7,
+    "room": 1,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 8,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 9,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 10,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 11,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 12,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 13,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 14,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 15,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 16,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 17,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 19,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 20,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 22,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 23,
+    "quantity": 1
+  },
+  {
+    "room": 1,
+    "amenity": 25,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 1,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 2,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 3,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 4,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 5,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 6,
+    "quantity": 1
+  },
+  {
+    "amenity": 7,
+    "room": 2,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 8,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 9,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 10,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 11,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 12,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 13,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 14,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 15,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 16,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 17,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 19,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 20,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 22,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 23,
+    "quantity": 1
+  },
+  {
+    "room": 2,
+    "amenity": 26,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 1,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 2,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 3,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 4,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 5,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 6,
+    "quantity": 1
+  },
+  {
+    "amenity": 7,
+    "room": 3,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 8,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 9,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 10,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 11,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 12,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 13,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 14,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 15,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 16,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 17,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 19,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 20,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 22,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 23,
+    "quantity": 1
+  },
+  {
+    "room": 3,
+    "amenity": 27,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 1,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 2,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 3,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 4,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 5,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 6,
+    "quantity": 1
+  },
+  {
+    "amenity": 7,
+    "room": 4,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 8,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 9,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 10,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 11,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 12,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 13,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 14,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 15,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 16,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 17,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 19,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 28,
+    "quantity": 1
+  },
+  {
+    "room": 4,
+    "amenity": 24,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 1,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 2,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 3,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 4,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 5,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 6,
+    "quantity": 1
+  },
+  {
+    "amenity": 7,
+    "room": 5,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 8,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 9,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 10,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 11,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 12,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 13,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 14,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 15,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 16,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 17,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 19,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 20,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 22,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 23,
+    "quantity": 1
+  },
+  {
+    "room": 5,
+    "amenity": 25,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 1,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 2,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 3,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 4,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 5,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 6,
+    "quantity": 1
+  },
+  {
+    "amenity": 7,
+    "room": 6,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 8,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 9,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 10,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 11,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 12,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 13,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 14,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 15,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 16,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 17,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 19,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 20,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 22,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 23,
+    "quantity": 1
+  },
+  {
+    "room": 6,
+    "amenity": 26,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 1,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 2,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 3,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 4,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 5,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 6,
+    "quantity": 1
+  },
+  {
+    "amenity": 7,
+    "room": 7,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 8,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 9,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 10,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 11,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 12,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 13,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 14,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 15,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 16,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 17,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 19,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 20,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 22,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 23,
+    "quantity": 1
+  },
+  {
+    "room": 7,
+    "amenity": 26,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 1,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 2,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 3,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 4,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 5,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 6,
+    "quantity": 1
+  },
+  {
+    "amenity": 7,
+    "room": 8,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 8,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 9,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 10,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 11,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 12,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 13,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 14,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 15,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 16,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 17,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 19,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 20,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 22,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 23,
+    "quantity": 1
+  },
+  {
+    "room": 8,
+    "amenity": 27,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 1,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 2,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 3,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 4,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 5,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 6,
+    "quantity": 1
+  },
+  {
+    "amenity": 7,
+    "room": 9,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 8,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 9,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 10,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 11,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 12,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 13,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 14,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 15,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 16,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 17,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 19,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 20,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 22,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 23,
+    "quantity": 1
+  },
+  {
+    "room": 9,
+    "amenity": 28,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 1,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 2,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 3,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 4,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 5,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 6,
+    "quantity": 1
+  },
+  {
+    "amenity": 7,
+    "room": 10,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 8,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 9,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 10,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 11,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 12,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 13,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 14,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 15,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 16,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 17,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 19,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 20,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 22,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 23,
+    "quantity": 1
+  },
+  {
+    "room": 10,
+    "amenity": 25,
+    "quantity": 1
+  }
+]

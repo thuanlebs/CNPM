@@ -1,0 +1,32 @@
+[
+  {
+    "first_name": "Nguyễn",
+    "last_name": "Văn A",
+    "vietnamese": true
+  },
+  {
+    "first_name": "Trần",
+    "last_name": "Thị B",
+    "vietnamese": true
+  },
+  {
+    "first_name": "John",
+    "last_name": "Doe",
+    "vietnamese": false
+  },
+  {
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "vietnamese": false
+  },
+  {
+    "first_name": "Lê",
+    "last_name": "Thị C",
+    "vietnamese": true
+  },
+  {
+    "first_name": "Phạm",
+    "last_name": "Văn D",
+    "vietnamese": true
+  } 
+]

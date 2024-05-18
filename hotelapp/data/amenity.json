@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Shampoo",
+    "amenity_type": 1,
+    "description": "Complimentary shampoo provided for guests."
+  },
+  {
+    "name": "Lotion",
+    "amenity_type": 1,
+    "description": "Complimentary lotion provided for guests."
+  },
+  {
+    "name": "Soap",
+    "amenity_type": 1,
+    "description": "Complimentary soap provided for guests."
+  },
+  {
+    "name": "Conditioner",
+    "amenity_type": 1,
+    "description": "Complimentary conditioner provided for guests."
+  },
+  {
+    "name": "Toothpaste",
+    "amenity_type": 1,
+    "description": "Complimentary toothpaste provided for guests."
+  },
+  {
+    "name": "Toothbrush",
+    "amenity_type": 1,
+    "description": "Complimentary toothbrush provided for guests."
+  },
+  {
+    "name": "Shower Gel",
+    "amenity_type": 1,
+    "description": "Complimentary shower gel provided for guests."
+  },
+  {
+    "name": "Comb",
+    "amenity_type": 1,
+    "description": "Complimentary comb provided for guests."
+  },
+  {
+    "name": "Shaving Cream",
+    "amenity_type": 1,
+    "description": "Complimentary shaving cream provided for guests."
+  },
+  {
+    "name": "Razor",
+    "amenity_type": 1,
+    "description": "Complimentary razor provided for guests."
+  },
+  {
+    "name": "Shower Cap",
+    "amenity_type": 1,
+    "description": "Complimentary shower cap provided for guests."
+  },
+  {
+    "name": "Hair Dryer",
+    "amenity_type": 2,
+    "description": "Hair dryer available in each room for guests' convenience."
+  },
+  {
+    "name": "Coffee Maker",
+    "amenity_type": 2,
+    "description": "In-room coffee maker provided for guests to brew their own coffee."
+  },
+  {
+    "name": "Coffee",
+    "amenity_type": 3,
+    "description": "Complimentary coffee packets provided for guests."
+  },
+  {
+    "name": "Creamer",
+    "amenity_type": 3,
+    "description": "Complimentary creamer packets provided for guests."
+  },
+  {
+    "name": "Bathrobe",
+    "amenity_type": 4,
+    "description": "Complimentary bathrobe provided for guests."
+  },
+  {
+    "name": "Slippers",
+    "amenity_type": 4,
+    "description": "Complimentary slippers provided for guests."
+  },
+  {
+    "name": "Free Breakfast",
+    "amenity_type": 5,
+    "description": "Complimentary breakfast provided for guests, offering options for both continental buffet and sit-down hot meals."
+  },
+  {
+    "name": "Down Pillow",
+    "amenity_type": 6,
+    "description": "Soft and fluffy down pillow, ideal for guests who prefer a plush feel."
+  },
+  {
+    "name": "Foam Pillow",
+    "amenity_type": 6,
+    "description": "Supportive foam pillow, perfect for guests who prefer firmer support."
+  },
+  {
+    "name": "Hypoallergenic Pillow",
+    "amenity_type": 6,
+    "description": "Pillow designed for guests with allergies, providing a comfortable and allergen-free sleep experience."
+  },
+  {
+    "name": "Free WiFi",
+    "amenity_type": 5,
+    "description": "Complimentary WiFi internet access available throughout the hotel, allowing guests to stay connected without additional charges."
+  },
+  {
+    "name": "Free Parking",
+    "amenity_type": 5,
+    "description": "Complimentary parking available for guests, eliminating the need for additional parking fees."
+  },
+  {
+    "name": "Premium Coffee",
+    "amenity_type": 3,
+    "description": "Elevated in-room coffee experience featuring freshly ground beans from a local roaster or Nespresso machine."
+  },
+  {
+    "name": "King bed",
+    "amenity_type": 7,
+    "description": "Enjoy the luxurious comfort of a spacious king bed, offering ample space for a restful night's sleep."
+  },
+  {
+    "name": "Queen bed",
+    "amenity_type": 7,
+    "description": "Relax in the cozy embrace of a queen bed, providing a comfortable haven for your stay."
+  },
+  {
+    "name": "Standard bed",
+    "amenity_type": 7,
+    "description": "Unwind in the comfort of a standard bed, offering a cozy retreat after a day of exploration or business activities."
+  },
+  {
+    "name": "Twin bed",
+    "amenity_type": 7,
+    "description": "Rest peacefully in the comfort of a twin bed, providing a cozy haven for solo travelers or companions seeking separate sleeping arrangements."
+  }
+]

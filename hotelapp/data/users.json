@@ -1,0 +1,101 @@
+[
+    {
+        "first_name": "Lam",
+        "last_name": "Thinh",
+        "address": "Go Vap, HCM",
+        "identity_num": "087203016804",
+        "phone": "335037042",
+        "email": "pthinh.lama@gmail.com",
+        "password": "password"
+    },
+    {
+        "first_name": "Emma",
+        "last_name": "Johnson",
+        "address": "789 Oak St, Village, Country",
+        "identity_num": "098765432100",
+        "phone": "987654999",
+        "email": "emma.johnson@example.com",
+        "password": "password"
+    },
+    {
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "address": "321 Pine St, Town, Country",
+        "identity_num": "012345672901",
+        "phone": "122334629",
+        "email": "michael.brown@example.com",
+        "password": "password"
+    },
+    {
+        "first_name": "Sophia",
+        "last_name": "Miller",
+        "address": "567 Maple St, City, Country",
+        "identity_num": "098712345678",
+        "phone": "234509875",
+        "email": "sophia.miller@example.com",
+        "password": "password"
+    },
+    {
+        "first_name": "James",
+        "last_name": "Davis",
+        "address": "987 Birch St, Town, Country",
+        "identity_num": "076543210982",
+        "phone": "555098765",
+        "email": "james.davis@example.com",
+        "password": "password"
+    },
+    {
+        "first_name": "Olivia",
+        "last_name": "Wilson",
+        "address": "654 Cedar St, Village, Country",
+        "identity_num": "089076543210",
+        "phone": "987654321",
+        "email": "olivia.wilson@example.com",
+        "password": "password"
+    },
+    {
+        "first_name": "William",
+        "last_name": "Martinez",
+        "address": "123 Pine St, City, Country",
+        "identity_num": "098765432109",
+        "phone": "234567896",
+        "email": "william.martinez@example.com",
+        "password": "password"
+    },
+    {
+        "first_name": "Ava",
+        "last_name": "Anderson",
+        "address": "789 Oak St, Town, Country",
+        "identity_num": "076543210987",
+        "phone": "122334455",
+        "email": "ava.anderson@example.com",
+        "password": "password"
+    },
+    {
+        "first_name": "Alexander",
+        "last_name": "Taylor",
+        "address": "456 Elm St, City, Country",
+        "identity_num": "089012345678",
+        "phone": "234509872",
+        "email": "alexander.taylor@example.com",
+        "password": "password"
+    },
+    {
+        "first_name": "Mia",
+        "last_name": "Moore",
+        "address": "321 Maple St, Village, Country",
+        "identity_num": "012345678901",
+        "phone": "555098265",
+        "email": "mia.moore@example.com",
+        "password": "password"
+    },
+    {
+        "first_name": "Ethan",
+        "last_name": "Garcia",
+        "address": "987 Cedar St, City, Country",
+        "identity_num": "087654321098",
+        "phone": "234567890",
+        "email": "ethan.garcia@example.com",
+        "password": "password"
+    }
+]

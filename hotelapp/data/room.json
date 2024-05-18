@@ -1,0 +1,122 @@
+[
+  {
+    "name": "101",
+    "room_type": 1
+  },
+  {
+    "name": "102",
+    "room_type": 5
+  },
+  {
+    "name": "103",
+    "room_type": 9
+  },
+  {
+    "name": "104",
+    "room_type": 3
+  },
+  {
+    "name": "105",
+    "room_type": 7
+  },
+  {
+    "name": "106",
+    "room_type": 2
+  },
+  {
+    "name": "107",
+    "room_type": 8
+  },
+  {
+    "name": "108",
+    "room_type": 6
+  },
+  {
+    "name": "109",
+    "room_type": 4
+  },
+  {
+    "name": "110",
+    "room_type": 10
+  },
+  {
+    "name": "201",
+    "room_type": 9
+  },
+  {
+    "name": "202",
+    "room_type": 3
+  },
+  {
+    "name": "203",
+    "room_type": 1
+  },
+  {
+    "name": "204",
+    "room_type": 5
+  },
+  {
+    "name": "205",
+    "room_type": 8
+  },
+  {
+    "name": "206",
+    "room_type": 2
+  },
+  {
+    "name": "207",
+    "room_type": 10
+  },
+  {
+    "name": "208",
+    "room_type": 7
+  },
+  {
+    "name": "209",
+    "room_type": 6
+  },
+  {
+    "name": "210",
+    "room_type": 4
+  },
+  {
+    "name": "301",
+    "room_type": 8
+  },
+  {
+    "name": "302",
+    "room_type": 10
+  },
+  {
+    "name": "303",
+    "room_type": 6
+  },
+  {
+    "name": "304",
+    "room_type": 4
+  },
+  {
+    "name": "305",
+    "room_type": 1
+  },
+  {
+    "name": "306",
+    "room_type": 3
+  },
+  {
+    "name": "307",
+    "room_type": 9
+  },
+  {
+    "name": "308",
+    "room_type": 7
+  },
+  {
+    "name": "309",
+    "room_type": 2
+  },
+  {
+    "name": "310",
+    "room_type": 5
+  }
+]

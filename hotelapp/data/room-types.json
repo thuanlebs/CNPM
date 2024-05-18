@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Standard Single Room",
+    "price": 10,
+    "room_size": 38,
+    "description": "A cozy single room with basic amenities.",
+    "adults": 2,
+    "children": 0
+  },
+  {
+    "name": "Standard Double Room",
+    "price": 15,
+    "room_size": 31,
+    "description": "A comfortable double room suitable for couples.",
+    "adults": 3,
+    "children": 0
+  },
+  {
+    "name": "Deluxe Suite",
+    "price": 25,
+    "room_size": 34,
+    "description": "An elegant suite with a separate living area and luxurious amenities.",
+    "adults": 3,
+    "children": 1
+  },
+  {
+    "name": "Family Room",
+    "price": 20,
+    "room_size": 35,
+    "description": "Spacious room suitable for families with children, featuring extra bedding options.",
+    "adults": 3,
+    "children": 2
+  },
+  {
+    "name": "Executive Room",
+    "price": 18,
+    "room_size": 32,
+    "description": "Well-appointed room with additional amenities for business travelers.",
+    "adults": 2,
+    "children": 0
+  },
+  {
+    "name": "Penthouse Suite",
+    "price": 50,
+    "room_size": 37,
+    "description": "Luxurious suite located on the top floor with panoramic views and premium services.",
+    "adults": 3,
+    "children": 0
+  },
+  {
+    "name": "Junior Suite",
+    "price": 30,
+    "room_size": 36,
+    "description": "A stylish suite with a comfortable seating area and modern furnishings.",
+    "adults": 3,
+    "children": 0
+  },
+  {
+    "name": "Standard Twin Room",
+    "price": 16,
+    "room_size": 30,
+    "description": "Room with two single beds, ideal for friends or colleagues traveling together.",
+    "adults": 3,
+    "children": 0
+  },
+  {
+    "name": "Accessible Room",
+    "price": 12,
+    "room_size": 39,
+    "description": "Wheelchair-accessible room with specially designed amenities for guests with mobility needs.",
+    "adults": 2,
+    "children": 0
+  },
+  {
+    "name": "Honeymoon Suite",
+    "price": 40,
+    "room_size": 40,
+    "description": "Romantic suite designed for honeymooners, featuring a jacuzzi and intimate atmosphere.",
+    "adults": 3,
+    "children": 0
+  }
+]

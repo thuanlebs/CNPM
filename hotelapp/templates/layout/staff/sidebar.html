@@ -1,0 +1,49 @@
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="app-icon">
+      <a href="/">
+        <img
+          src="{{ url_for('static', filename='icons/logo.svg') }}"
+          class="logo"
+        />
+      </a>
+    </div>
+  </div>
+  <ul class="sidebar-list">
+    <li class="sidebar-list-item" data-title="Booking">
+      <a href="/staff">
+        <i class="fa-solid fa-ticket"></i>
+        <span>Bookings</span>
+      </a>
+    </li>
+    <li class="sidebar-list-item" data-title="Reservation">
+      <a href="/staff/reservations">
+        <i class="fa-regular fa-calendar-check"></i>
+        <span>Reservations</span>
+      </a>
+    </li>
+    <li class="sidebar-list-item" data-title="Issue">
+      <a href="/staff/issues">
+        <i class="fa-regular fa-clock"></i>
+        <span>Issues</span>
+      </a>
+    </li>
+  </ul>
+
+  <div class="account-info">
+    <div class="account-info-picture">
+      {%set src =
+      "https://res.cloudinary.com/dzjhqjxqj/image/upload/v1704532184/default-avatar-icon-of-social-media-user-vector_yefjz5.jpg"
+      %} {% if current_user.avatar %} {%set src = current_user.avatar %} {%
+      endif %}
+      <img src="{{src}}" alt="Account" />
+    </div>
+    <div class="account-info-name">
+      {{current_user.first_name}} {{current_user.name}}
+    </div>
+  </div>
+  <a href="/logout" class="btn btn--primary">
+    <span>Log out</span>
+    <i class="bx bx-log-out" style="font-size: 22px"></i>
+  </a>
+</div>

@@ -1,0 +1,235 @@
+{% extends 'layout/default/base.html' %} {% block title %} Rooms {% endblock %}
+{% block header %} {% endblock %} {% block footer %} {% endblock %} {% block
+content %} {% if 'cart' in session %} {%set check_in =
+session.get("cart").check_in %} {%set check_out = session.get("cart").check_out
+%} {%set items = session.get("cart")['items'] %}
+<div class="container" style="margin-top: 30px">
+  <div class="checkout-container">
+    <div class="row gy-xl-3">
+      <div class="col-8 col-xl-12">
+        <div class="cart-info">
+          <h1 class="cart-info__heading">Information</h1>
+          <div class="cart-info__separate"></div>
+
+          <div class="form__row">
+            <div class="form__group form__group--inline">
+              <label class="form__checkbox">
+                <input
+                  type="radio"
+                  class="form__checkbox-input d-none form-type"
+                  name="form-type"
+                  value="reservation-form"
+                  checked
+                />
+                <span class="form__checkbox-label">Reservation form</span>
+              </label>
+            </div>
+            <div class="form__group form__group--inline">
+              <label class="form__checkbox">
+                <input
+                  type="radio"
+                  class="form__checkbox-input d-none form-type"
+                  name="form-type"
+                  value="booking-form"
+                />
+                <span class="form__checkbox-label">Booking form</span>
+              </label>
+            </div>
+          </div>
+
+          <form
+            class="form hide"
+            method="post"
+            action="/book"
+            id="booker"
+            onsubmit="onFormSubmit()"
+          >
+            <div class="booker">
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="name" class="form__label form__label--small"
+                    >Name</label
+                  >
+                  <div class="form__text-input form__text-input--small">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Name"
+                      class="form__input"
+                      required
+                      minlength="2"
+                    />
+                  </div>
+                  <p class="form__error">Name must be at least 2 characters</p>
+                </div>
+                <div class="form__group">
+                  <label for="phone" class="form__label form__label--small"
+                    >Phone</label
+                  >
+                  <div class="form__text-input form__text-input--small">
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      placeholder="Phone"
+                      class="form__input"
+                      required
+                      minlength="10"
+                      maxlength="11"
+                    />
+                  </div>
+                  <p class="form__error">
+                    Phone must be at least 10 characters
+                  </p>
+                </div>
+              </div>
+              <div class="form__group">
+                <label for="email" class="form__label form__label--small"
+                  >Email</label
+                >
+                <div class="form__text-input form__text-input--small">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                    class="form__input"
+                    required
+                    minlength="2"
+                  />
+                </div>
+                <p class="form__error">Example: thinh@gmail.com</p>
+              </div>
+              <div class="form__group">
+                <label for="notes" class="form__label form__label--small"
+                  >Notes</label
+                >
+                <div class="form__text-area">
+                  <textarea
+                    name="notes"
+                    id="notes"
+                    placeholder="Note your requirements"
+                    class="form__text-area-input"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="cart-info__separate"></div>
+
+          {%set currentRoom = rooms | selectattr("id", "equalto", items[0].room)
+          | first%}
+          <h2 class="cart-info__sub-heading">
+            Room<span class="room-name">({{currentRoom.name}})</span>'s guests
+          </h2>
+
+          <ul class="guest-list" data-room="{{items[0].room}}"></ul>
+
+          <div class="form__group">
+            <button
+              class="btn btn--small btn--primary js-more-guest"
+              style="width: 100%"
+            >
+              More guest
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 col-xl-12">
+        <div class="cart-info">
+          <div class="cart-info__row">
+            <a
+              style="
+                width: 100%;
+                text-align: right;
+                cursor: pointer;
+                padding: 4px 2px;
+              "
+              onclick="history.back()"
+            >
+              <span><i class="fa-solid fa-chevron-left"></i></span>
+              <span>Back</span>
+            </a>
+          </div>
+          <div class="cart-info__row">
+            <span>Check in</span>
+            <span>{{check_in}}</span>
+          </div>
+          <div class="cart-info__row">
+            <span>Check out </span>
+            <span>{{check_out}}</span>
+          </div>
+          <div class="cart-info__row">
+            <span
+              >Subtotal <span class="cart-info__sub-label">(Rooms)</span></span
+            >
+            <span class="total-rooms"></span>
+          </div>
+          <div class="cart-info__separate"></div>
+          <div class="cart-info__row">
+            <span>Estimated Total</span>
+            <span class="total-amount"></span>
+          </div>
+          <div class="cart-info__row hide">
+            <button
+              class="cart-info__next-btn btn btn--primary btn--rounded btn-book hide"
+              style="width: 100%"
+              type="submit"
+              form="booker"
+            >
+              Create
+            </button>
+          </div>
+          <div class="cart-info__row">
+            <button
+              class="cart-info__next-btn btn btn--primary btn-reservate"
+              style="width: 100%"
+            >
+              Create
+            </button>
+          </div>
+        </div>
+        <div class="cart-info">
+          <h2 class="cart-info__sub-heading">Rooms</h2>
+          <div class="cart-info__list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %} {% endblock %} {% block javascript %}
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='js/checkout.js') }}"
+></script>
+
+<script>
+  $$(".form-type").forEach((item) => {
+    item.addEventListener("change", () => {
+      if (item.value === "booking-form") {
+        $("#booker").classList.remove("hide");
+        $(".btn-reservate").classList.add("hide");
+        $(".btn-book").classList.remove("hide");
+      } else {
+        $("#booker").classList.add("hide");
+        $(".btn-reservate").classList.remove("hide");
+        $(".btn-book").classList.add("hide");
+      }
+    });
+  });
+
+  $(".btn-reservate").addEventListener("click", () => {
+    fetch("/reservate", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then((res) => {
+      console.log(res);
+      window.location.href = "/";
+    });
+  });
+</script>
+{% endblock %}
